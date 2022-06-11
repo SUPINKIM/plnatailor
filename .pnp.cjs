@@ -48,6 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.17.0"],\
             ["eslint-config-prettier", "virtual:e0c2b0d4ebaf5bb1dc253ba0e077ef1f007e06c4df37f6c5670964327e7cf9aa2e46ae9c628127a6dc6aba2de18b9e13d9f5c4fb1f669774777dabb2af304406#npm:8.5.0"],\
             ["eslint-plugin-prettier", "virtual:e0c2b0d4ebaf5bb1dc253ba0e077ef1f007e06c4df37f6c5670964327e7cf9aa2e46ae9c628127a6dc6aba2de18b9e13d9f5c4fb1f669774777dabb2af304406#npm:4.0.0"],\
+            ["global", "npm:4.4.0"],\
             ["jest", "virtual:e0c2b0d4ebaf5bb1dc253ba0e077ef1f007e06c4df37f6c5670964327e7cf9aa2e46ae9c628127a6dc6aba2de18b9e13d9f5c4fb1f669774777dabb2af304406#npm:28.0.3"],\
             ["prettier", "npm:2.6.2"],\
             ["reflect-metadata", "npm:0.1.13"],\
@@ -3743,6 +3744,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["dom-walk", [\
+        ["npm:0.1.2", {\
+          "packageLocation": "./.yarn/cache/dom-walk-npm-0.1.2-7d20a1a8d8-19eb0ce9c6.zip/node_modules/dom-walk/",\
+          "packageDependencies": [\
+            ["dom-walk", "npm:0.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["ee-first", [\
         ["npm:1.1.1", {\
           "packageLocation": "./.yarn/cache/ee-first-npm-1.1.1-33f8535b39-1b4cac778d.zip/node_modules/ee-first/",\
@@ -4699,6 +4709,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/glob-to-regexp-npm-0.4.1-cd697e0fc7-e795f4e8f0.zip/node_modules/glob-to-regexp/",\
           "packageDependencies": [\
             ["glob-to-regexp", "npm:0.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["global", [\
+        ["npm:4.4.0", {\
+          "packageLocation": "./.yarn/cache/global-npm-4.4.0-888ee8033d-9c057557c8.zip/node_modules/global/",\
+          "packageDependencies": [\
+            ["global", "npm:4.4.0"],\
+            ["min-document", "npm:2.19.0"],\
+            ["process", "npm:0.11.10"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6226,6 +6247,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["min-document", [\
+        ["npm:2.19.0", {\
+          "packageLocation": "./.yarn/cache/min-document-npm-2.19.0-458cdb3d84-da6437562e.zip/node_modules/min-document/",\
+          "packageDependencies": [\
+            ["min-document", "npm:2.19.0"],\
+            ["dom-walk", "npm:0.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["minimatch", [\
         ["npm:3.1.2", {\
           "packageLocation": "./.yarn/cache/minimatch-npm-3.1.2-9405269906-c154e56640.zip/node_modules/minimatch/",\
@@ -6831,6 +6862,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.17.0"],\
             ["eslint-config-prettier", "virtual:e0c2b0d4ebaf5bb1dc253ba0e077ef1f007e06c4df37f6c5670964327e7cf9aa2e46ae9c628127a6dc6aba2de18b9e13d9f5c4fb1f669774777dabb2af304406#npm:8.5.0"],\
             ["eslint-plugin-prettier", "virtual:e0c2b0d4ebaf5bb1dc253ba0e077ef1f007e06c4df37f6c5670964327e7cf9aa2e46ae9c628127a6dc6aba2de18b9e13d9f5c4fb1f669774777dabb2af304406#npm:4.0.0"],\
+            ["global", "npm:4.4.0"],\
             ["jest", "virtual:e0c2b0d4ebaf5bb1dc253ba0e077ef1f007e06c4df37f6c5670964327e7cf9aa2e46ae9c628127a6dc6aba2de18b9e13d9f5c4fb1f669774777dabb2af304406#npm:28.0.3"],\
             ["prettier", "npm:2.6.2"],\
             ["reflect-metadata", "npm:0.1.13"],\
@@ -6903,6 +6935,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ansi-regex", "npm:5.0.1"],\
             ["ansi-styles", "npm:5.2.0"],\
             ["react-is", "npm:18.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["process", [\
+        ["npm:0.11.10", {\
+          "packageLocation": "./.yarn/cache/process-npm-0.11.10-aeb3b641ae-bfcce49814.zip/node_modules/process/",\
+          "packageDependencies": [\
+            ["process", "npm:0.11.10"]\
           ],\
           "linkType": "HARD"\
         }]\
