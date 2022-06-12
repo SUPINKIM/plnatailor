@@ -25,5 +25,6 @@ module.exports = {
         quotes: ['error', 'single'],
         'space-in-parens': ['error', 'never'],
         'comma-spacing': ['error', { 'before': false, 'after': true }],
+        'no-multiple-empty-lines': ["error", { "max": 2, "maxBOF": 1 }]
     },
 };
