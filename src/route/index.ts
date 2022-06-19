@@ -1,3 +1,4 @@
+import { SignupModule } from './../signup/signup.module';
 import { LoginModule } from '../login/login.module';
 import { KakaoLoginModule } from '../kakaoLogin/kakaoLogin.module';
 
@@ -11,5 +12,9 @@ export const routes = [
                 module: KakaoLoginModule,
             },
         ],
+    },
+    {
+        path: 'signup',
+        module: SignupModule,
     },
 ];

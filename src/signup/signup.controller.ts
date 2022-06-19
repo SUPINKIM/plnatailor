@@ -1,15 +1,39 @@
-import { Controller, Post, Req, Res } from '@nestjs/common';
+import { Response, Request } from 'express';
+import { Controller, Post, Req, Res, HttpStatus } from '@nestjs/common';
 import { SignupService } from './signup.service';
+import { UserService } from '@/database/user/user.service';
 
-@Controller('signup')
+@Controller()
 export class SignupController {
-    constructor(private readonly signupService: SignupService) {}
+    constructor(
+        private readonly signupService: SignupService,
+        private readonly userService: UserService,
+    ) {}
 
     @Post()
-    signup(@Req() request: Request, @Res() response: Response) {
-        console.log(request.body);
-        this.signupService.signup();
+    async signup(@Req() req: Request, @Res() res: Response) {
+        try {
+            const { email, password } = req.body;
 
-        return response.json();
+            if (!(email && password)) throw Error();
+
+            const validation = await this.signupService.validate(
+                email,
+                this.userService.isSameUserAccount.bind(this.userService),
+            );
+
+            if (validation) {
+                const hashedPass = this.signupService.encodePassword(password);
+                console.log(hashedPass);
+                this.signupService.saveUser(
+                    { email, password: hashedPass },
+                    this.userService.saveUser.bind(this.userService),
+                );
+                console.log(1);
+                return res.status(HttpStatus.OK).json({ success: 'OK' });
+            }
+        } catch {
+            return res.status(HttpStatus.BAD_REQUEST).json({ success: 'FAIL' });
+        }
     }
 }
