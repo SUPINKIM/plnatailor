@@ -950,6 +950,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nestjs/passport@npm:^8.2.2":
+  version: 8.2.2
+  resolution: "@nestjs/passport@npm:8.2.2"
+  peerDependencies:
+    "@nestjs/common": ^6.0.0 || ^7.0.0 || ^8.0.0
+    passport: ^0.4.0 || ^0.5.0 || ^0.6.0
+  checksum: ec94c3a0fcdce0f4aceee69a20cbdea782629190cbd75d72731abdba27baafcea28963d9a1d29597a73ee6e73cdff04555c47641d50e6368294f09af4b48ac94
+  languageName: node
+  linkType: hard
+
 "@nestjs/platform-express@npm:^8.0.0":
   version: 8.4.7
   resolution: "@nestjs/platform-express@npm:8.4.7"
@@ -1247,7 +1257,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:^4.17.13":
+"@types/express@npm:*, @types/express@npm:^4.17.13":
   version: 4.17.13
   resolution: "@types/express@npm:4.17.13"
   dependencies:
@@ -1342,6 +1352,25 @@ __metadata:
   version: 4.0.0
   resolution: "@types/parse-json@npm:4.0.0"
   checksum: fd6bce2b674b6efc3db4c7c3d336bd70c90838e8439de639b909ce22f3720d21344f52427f1d9e57b265fcb7f6c018699b99e5e0c208a1a4823014269a6bf35b
+  languageName: node
+  linkType: hard
+
+"@types/passport-kakao@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@types/passport-kakao@npm:0.2.1"
+  dependencies:
+    "@types/express": "*"
+    "@types/passport": "*"
+  checksum: eab5b4eb1a5dab2888356a1f447f419ebc13a10941c95e8f606c32bcb766afcd6015e86d2e81da27f08104728fe2363ebf7b63cb6771de00f379dce73f0f873a
+  languageName: node
+  linkType: hard
+
+"@types/passport@npm:*":
+  version: 1.0.9
+  resolution: "@types/passport@npm:1.0.9"
+  dependencies:
+    "@types/express": "*"
+  checksum: 7c8d288a517c36439ea4670e5812d84357ab567b969554e9adbe9b64aff72409ffdf46526d7c4322569662f6e55382caee77b735dc75023802005305683465cd
   languageName: node
   linkType: hard
 
@@ -5294,6 +5323,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"oauth@npm:0.9.x":
+  version: 0.9.15
+  resolution: "oauth@npm:0.9.15"
+  checksum: 957c0d8d85300398dcb0e293953650c0fc3facc795bee8228238414f19f59cef5fd4ee8d17a972c142924c10c5f6ec50ef80f77f4a6cc6e3c98f9d22c027801c
+  languageName: node
+  linkType: hard
+
 "object-assign@npm:^4, object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
@@ -5452,6 +5488,45 @@ __metadata:
   languageName: node
   linkType: hard
 
+"passport-kakao@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "passport-kakao@npm:1.0.1"
+  dependencies:
+    passport-oauth2: ~1.1.2
+    pkginfo: ~0.3.0
+  checksum: ba78fde445efd3118ea64a2364de306e952b16cddc38bb61cc27cadbaf1511c3d819dcf74388cd438745fc5d13bc5708922672ef90388ebd53ae308d9ad0c0c5
+  languageName: node
+  linkType: hard
+
+"passport-oauth2@npm:~1.1.2":
+  version: 1.1.2
+  resolution: "passport-oauth2@npm:1.1.2"
+  dependencies:
+    oauth: 0.9.x
+    passport-strategy: 1.x.x
+    uid2: 0.0.x
+  checksum: f59e80a0753fc9516346f1857c2e43333d186ede8aef9d047450c54b83e0f655f0ad47f68376147273750cbd983247e651e679a7d13a978c32ca80d2e4ee9dd9
+  languageName: node
+  linkType: hard
+
+"passport-strategy@npm:1.x.x":
+  version: 1.0.0
+  resolution: "passport-strategy@npm:1.0.0"
+  checksum: 5086693f2508e538dffa55a338c89fe8192fb5f4478c71f80cd5890b8573419a098f4fec88b505374f60bbe9049f6f24b9f3992678612528a3370b4dc73354a2
+  languageName: node
+  linkType: hard
+
+"passport@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "passport@npm:0.6.0"
+  dependencies:
+    passport-strategy: 1.x.x
+    pause: 0.0.1
+    utils-merge: ^1.0.1
+  checksum: ef932ad671d50de34765c7a53cd1e058d8331a82a6df09265a9c6c1168911aee4a7b5215803d0101110ab7f317e096b4954ca7e18fb2c33b9929f0bd17dbe159
+  languageName: node
+  linkType: hard
+
 "path-exists@npm:^4.0.0":
   version: 4.0.0
   resolution: "path-exists@npm:4.0.0"
@@ -5501,6 +5576,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pause@npm:0.0.1":
+  version: 0.0.1
+  resolution: "pause@npm:0.0.1"
+  checksum: e96ee581b68085e6f2ba5adbcb4d4a41fe88e5b514061e76df2fe1905f0f65f4fe5a843b538e9551122c6b9184ff4be266c2ee0ea4614702f9a3d04466d9f462
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
@@ -5531,6 +5613,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pkginfo@npm:~0.3.0":
+  version: 0.3.1
+  resolution: "pkginfo@npm:0.3.1"
+  checksum: b59f7878ed169301930f5eab767d6b82a1c1e0831c3d1381c8dd04ef8a883fc895c067d06ce6d6111eff06130ad94bd8a518c7a227cc5e9914eedab2ee8512a7
+  languageName: node
+  linkType: hard
+
 "planserver@workspace:.":
   version: 0.0.0-use.local
   resolution: "planserver@workspace:."
@@ -5540,6 +5629,7 @@ __metadata:
     "@nestjs/config": ^2.1.0
     "@nestjs/core": ^8.0.0
     "@nestjs/mongoose": ^9.1.1
+    "@nestjs/passport": ^8.2.2
     "@nestjs/platform-express": ^8.0.0
     "@nestjs/schematics": ^8.0.0
     "@nestjs/swagger": ^5.2.1
@@ -5547,6 +5637,7 @@ __metadata:
     "@types/express": ^4.17.13
     "@types/jest": 27.5.0
     "@types/node": ^16.0.0
+    "@types/passport-kakao": ^0.2.1
     "@types/supertest": ^2.0.11
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.0.0
@@ -5555,6 +5646,8 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     jest: 28.0.3
     mongoose: ^6.4.0
+    passport: ^0.6.0
+    passport-kakao: ^1.0.1
     prettier: ^2.3.2
     reflect-metadata: ^0.1.13
     rimraf: ^3.0.2
@@ -6828,6 +6921,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uid2@npm:0.0.x":
+  version: 0.0.4
+  resolution: "uid2@npm:0.0.4"
+  checksum: e92325ce2e3b7be504b19e835dbb5a8b0495031f364b08ca46745468ed0ae0f202a4fdaf99a1a2715844156efc3ab410456ae24a0f7c0ae4b0a2e9f2784edfd9
+  languageName: node
+  linkType: hard
+
 "unique-filename@npm:^1.1.1":
   version: 1.1.1
   resolution: "unique-filename@npm:1.1.1"
@@ -6876,7 +6976,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"utils-merge@npm:1.0.1":
+"utils-merge@npm:1.0.1, utils-merge@npm:^1.0.1":
   version: 1.0.1
   resolution: "utils-merge@npm:1.0.1"
   checksum: c81095493225ecfc28add49c106ca4f09cdf56bc66731aa8dabc2edbbccb1e1bfe2de6a115e5c6a380d3ea166d1636410b62ef216bb07b3feb1cfde1d95d5080

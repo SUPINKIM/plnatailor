@@ -24,12 +24,10 @@ export class SignupController {
 
             if (validation) {
                 const hashedPass = this.signupService.encodePassword(password);
-                console.log(hashedPass);
                 this.signupService.saveUser(
                     { email, password: hashedPass },
                     this.userService.saveUser.bind(this.userService),
                 );
-                console.log(1);
                 return res.status(HttpStatus.OK).json({ success: 'OK' });
             }
         } catch {

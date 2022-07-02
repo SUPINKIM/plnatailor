@@ -24,7 +24,6 @@ export class SignupService {
             password: userInfo.password,
         });
     }
-
     encodePassword(password: string): string {
         try {
             return crypto

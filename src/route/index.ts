@@ -1,6 +1,6 @@
 import { SignupModule } from './../signup/signup.module';
 import { LoginModule } from '../login/login.module';
-import { KakaoLoginModule } from '../kakaoLogin/kakaoLogin.module';
+import { KakaoLoginModule } from '../kakao-login/kakaoLogin.module';
 
 export const routes = [
     {
