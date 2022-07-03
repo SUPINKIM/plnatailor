@@ -9,7 +9,7 @@ export class Order {
     id: number;
 
     @Prop()
-    orderlist: { title: string; count: number }[];
+    orderlist: { productId: number; title: string; count: number }[];
 
     @Prop()
     price: number; //total price
