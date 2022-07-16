@@ -30,7 +30,7 @@ export class SignupController {
                 );
                 return res.status(HttpStatus.OK).json({ success: 'OK' });
             }
-        } catch {
+        } catch (e) {
             return res.status(HttpStatus.BAD_REQUEST).json({ success: 'FAIL' });
         }
     }

@@ -1,4 +1,4 @@
-export interface AdminAccount {
+export interface AdminAccountType {
     id: string;
     password: string;
 }

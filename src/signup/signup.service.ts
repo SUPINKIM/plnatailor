@@ -1,6 +1,6 @@
 import { UserInformationDto, UserAccountDto } from '@/database/user/user.dto';
+import { encodePassword } from '@/utils/password';
 import { Injectable } from '@nestjs/common';
-import * as crypto from 'crypto';
 
 @Injectable()
 export class SignupService {
@@ -24,14 +24,8 @@ export class SignupService {
             password: userInfo.password,
         });
     }
+
     encodePassword(password: string): string {
-        try {
-            return crypto
-                .createHmac('sha256', process.env.SECRETE_KEY)
-                .update(password)
-                .digest('hex');
-        } catch (e) {
-            console.log(e);
-        }
+        return encodePassword(password);
     }
 }

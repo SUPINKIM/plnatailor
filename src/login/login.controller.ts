@@ -14,7 +14,7 @@ export class LoginController {
     @Get()
     login(@Body() userAccount: UserAccountDto, @Res() res: Response) {
         console.log(userAccount);
-        this.loginService.getUserInfo(userAccount);
+        this.loginService.getUserInfo(userAccount, this.userService);
         // this.loginService.login();
         return res.json();
     }

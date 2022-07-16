@@ -23,7 +23,11 @@ export class UserService {
     }
 
     async findOneUser(email: string): Promise<User | null> {
-        return null;
+        const foundUser = await this.userModel.findOne({
+            email: { $eq: email },
+        });
+        console.log(foundUser);
+        return foundUser ?? null;
     }
 
     async findAllUserAccount(): Promise<{ email: string }[]> {
